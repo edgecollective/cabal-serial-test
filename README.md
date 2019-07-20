@@ -8,11 +8,7 @@ You can use ```@cabalbot``` to control / get info from an Arduino connected to t
 Type ```@cabalbot HELP``` into a cabal to see a list of commands -- the @cabalbot will do your bidding!
 
 
-## Installation
-
-(Apologies -- I barely know how to use Node -- but this seems to work):
-
-### Node packages
+## Installing Node packages
 
 Install ```cabal-headless``` and ```serialport``` via npm:
 
@@ -21,7 +17,7 @@ npm install cabal-headless
 npm install serialport
 ```
 
-### Microcontroller code
+## Installing Microcontroller code
 
 Load the code in ```soil_bot_firmware``` onto an Arduino-compatible device.
 
@@ -33,7 +29,7 @@ After installing the library and loading the firmware, note what serialport the 
 const port = new SerialPort('/dev/ttyACM0')
 ```
 
-### Cabal setup
+### Setting up the Cabal
 
 The cabal key for the bot is also hard-coded into ```soil.js``` on line 16 (change it to match your cabal):
 
