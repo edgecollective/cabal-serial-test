@@ -23,9 +23,11 @@ npm install serialport
 
 ### Microcontroller code
 
-Load the code in soil_bot_firmware onto an Arduino-compatible device.
+Load the code in ```soil_bot_firmware``` onto an Arduino-compatible device.
 
-Note what serialport the Arduino ends up on; this is hard-coded into ```soil.js``` on line 5 (you should change it to match your system):
+You'll also need to install the [Arduino-SerialCommand](https://github.com/p-v-o-s/Arduino-SerialCommand) library.
+
+After installing the library and loading the firmware, note what serialport the Arduino ends up on; this is hard-coded into ```soil.js``` on line 5 (you should change it to match your system):
 
 ```
 const port = new SerialPort('/dev/ttyACM0')
