@@ -8,6 +8,8 @@ You can use ```@cabalbot``` to control / get info from an Arduino connected to t
 Type ```@cabalbot HELP``` into a cabal to see a list of commands -- the @cabalbot will do your bidding!
 
 
+## Installation
+
 ### Installing Node packages
 
 Install ```cabal-headless``` and ```serialport``` via npm:
